@@ -1,12 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  output: 'export',
-  basePath: '/vibe-o-rama',
-  assetPrefix: '/vibe-o-rama/',
-  images: {
-    unoptimized: true,
-  },
-}
+const repo = "vibe-o-rama";
 
-module.exports = nextConfig
+const nextConfig = {
+  output: "export",
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
+  trailingSlash: true,
+  images: { unoptimized: true },
+};
+
+module.exports = nextConfig;

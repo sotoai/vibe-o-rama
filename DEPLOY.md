@@ -7,7 +7,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000/vibe-o-rama in your browser.
+Open http://localhost:3000/vibe-o-rama/ in your browser.
 
 Note: The basePath is `/vibe-o-rama`, so local dev also uses this path.
 

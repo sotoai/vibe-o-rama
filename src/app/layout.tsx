@@ -3,8 +3,8 @@ import './globals.css'
 import { Nav, Footer } from '@/components'
 
 export const metadata: Metadata = {
-  title: 'Vibe-O-Thon | Cisco Employee Enablement',
-  description: 'A creative AI playground for Cisco employees. Move from prompts to systems—build interactive, shareable artifacts using modern AI tools.',
+  title: 'Vibe-O-Rama | SPRO AI Enablement',
+  description: 'A creative AI playground for SPRO. Move from prompts to systems—build interactive, shareable artifacts using modern AI tools.',
 }
 
 export default function RootLayout({
