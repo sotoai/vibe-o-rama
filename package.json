@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "next build",
-    "deploy": "gh-pages -d out --dotfiles"
+    "deploy": "gh-pages -d out -b gh-pages -u \"Josh Soto <me@soto.ai>\" --dotfiles"
   },
   "dependencies": {
     "framer-motion": "^11.3.8",
