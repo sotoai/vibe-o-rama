@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:dala.craftedbygc.com)",
+      "WebSearch",
+      "WebFetch(domain:www.lapa.ninja)"
+    ]
+  }
+}
