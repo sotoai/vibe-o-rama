@@ -2,7 +2,6 @@
 
 import { motion, useReducedMotion } from 'framer-motion'
 import { cardVariants, fadeVariantsReduced } from '@/lib/motion'
-import Image from 'next/image'
 
 interface ArtifactItem {
   id: string
@@ -53,11 +52,11 @@ function GalleryItem({ item }: { item: ArtifactItem }) {
     >
       {/* Image area */}
       <div className="aspect-[4/3] bg-dark-800 relative overflow-hidden">
-        <Image
-          src={item.image}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${item.image}`}
           alt={item.name}
-          fill
-          className="object-cover transition-all duration-500 group-hover:scale-110 group-hover:opacity-80"
+          className="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:opacity-80"
         />
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-dark-950/90 via-dark-950/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-300" />

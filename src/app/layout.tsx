@@ -3,8 +3,8 @@ import './globals.css'
 import { Nav, Footer } from '@/components'
 
 export const metadata: Metadata = {
-  title: 'Vibe-O-Rama | SPRO AI Enablement',
-  description: 'A creative AI playground for SPRO. Move from prompts to systems—build interactive, shareable artifacts using modern AI tools.',
+  title: 'Vibe-O-Rama | SPRO',
+  description: 'A creative AI playground for SPRO. Build weird, fun, delightful things with AI. No business case required.',
 }
 
 export default function RootLayout({

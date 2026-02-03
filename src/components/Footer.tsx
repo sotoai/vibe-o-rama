@@ -25,8 +25,8 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white">Vibe-O-Rama</h3>
             <p className="text-sm text-dark-400 max-w-xs leading-relaxed">
-              An internal AI enablement program for SPRO.
-              Built for learning, experimentation, and play.
+              A creative AI playground for SPRO.
+              Build weird stuff. Have fun. No business case required.
             </p>
           </div>
 

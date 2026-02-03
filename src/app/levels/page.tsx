@@ -49,11 +49,11 @@ const levels = [
   },
   {
     level: 4,
-    name: 'Systems Thinker',
-    description: 'You\'re not building tools anymore. You\'re building workflows. Big difference.',
+    name: 'Mad Scientist',
+    description: 'You\'re not building one-offs anymore. You\'re building things that build things.',
     activities: [
-      'Automate something you do every week',
-      'Connect your artifact to other tools',
+      'Create something that connects multiple ideas',
+      'Make an artifact that evolves or learns',
       'Help someone else level up their build',
     ],
     gradient: 'from-violet-400 to-purple-600',
@@ -231,16 +231,16 @@ export default function LevelsPage() {
           >
             {[
               {
+                q: 'Does my artifact need to be work-related?',
+                a: 'Absolutely not. Build a game, a joke generator, something for your friends, whatever. The weirder the better, honestly.',
+              },
+              {
                 q: 'Do I need to reach Level 5?',
                 a: 'Nope. Level 1 is a win. Level 2 is a bigger win. Level 5 is for people who can\'t stop.',
               },
               {
                 q: 'Who decides when I level up?',
                 a: 'Mostly you. If you did the things, you earned it. Facilitators can help if you\'re unsure.',
-              },
-              {
-                q: 'Can I speedrun this?',
-                a: 'If you\'re already building and sharing, you might move fast. But it\'s not a race.',
               },
               {
                 q: 'What if I get stuck?',

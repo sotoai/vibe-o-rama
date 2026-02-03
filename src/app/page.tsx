@@ -18,65 +18,65 @@ import { fadeUpVariants, fadeVariantsReduced, fadeUpScaleVariants, staggerContai
 const artifacts = [
   {
     id: '1',
-    name: 'The Pre-Meeting Whisperer',
-    description: 'Crawls your calendar, drafts an agenda, and tells you who might derail the conversation.',
-    tags: ['workflow', 'meetings'],
+    name: 'Dream Journal Illustrator',
+    description: 'Describe last night\'s fever dream, get back cursed AI art you can send to your therapist.',
+    tags: ['creative', 'unhinged'],
     image: '/artifact-01.svg',
   },
   {
     id: '2',
-    name: 'TLDR Machine',
-    description: 'Turns a week of Slack chaos into a newsletter your team might actually read.',
-    tags: ['generator', 'sanity-saver'],
+    name: 'Spotify Roast Bot',
+    description: 'Analyzes your listening history and drags you for your 3am sad girl hours.',
+    tags: ['roast', 'music'],
     image: '/artifact-02.svg',
   },
   {
     id: '3',
-    name: 'Flowchart Gremlin',
-    description: 'Because sometimes you need a decision tree to decide if you need a decision tree.',
-    tags: ['interactive', 'meta'],
+    name: 'Excuse Generator 3000',
+    description: 'Need to bail on plans? Get a perfectly calibrated excuse based on the social context.',
+    tags: ['social', 'survival'],
     image: '/artifact-03.svg',
   },
   {
     id: '4',
-    name: 'Standup Shuffler',
-    description: 'Randomizes speaking order and throws in icebreakers nobody asked for.',
-    tags: ['social', 'chaos'],
+    name: 'Plant Dad/Mom Coach',
+    description: 'An AI that guilts you into watering your plants and celebrates when they don\'t die.',
+    tags: ['wellness', 'guilt'],
     image: '/artifact-04.svg',
   },
   {
     id: '5',
-    name: 'OKR Mood Ring',
-    description: 'A dashboard that shows your quarterly goals and gently judges your progress.',
-    tags: ['dashboard', 'accountability'],
+    name: 'Astrology But Make It Data',
+    description: 'Generates your horoscope based on your actual calendar. Mercury retrograde = you double-booked.',
+    tags: ['chaos', 'stars'],
     image: '/artifact-05.svg',
   },
   {
     id: '6',
-    name: 'Feedback Therapist',
-    description: 'Takes your "this could be better" notes and turns them into actual feedback.',
-    tags: ['generator', 'diplomacy'],
+    name: 'Recipe Roulette',
+    description: 'Tell it what\'s rotting in your fridge. It tells you what crime against cuisine you can commit.',
+    tags: ['food', 'chaos'],
     image: '/artifact-06.svg',
   },
   {
     id: '7',
-    name: 'Team Trivia Torture',
-    description: 'Generates quiz questions from your docs. Find out who actually reads the wiki.',
-    tags: ['social', 'exposed'],
+    name: 'Passive Aggressive Note Writer',
+    description: 'For when "please don\'t eat my lunch" needs to hit different.',
+    tags: ['petty', 'art'],
     image: '/artifact-07.svg',
   },
   {
     id: '8',
-    name: 'Corporate BS Translator',
-    description: '"Let\'s take this offline" → "I don\'t have an answer and I\'m hoping you forget."',
-    tags: ['utility', 'truth'],
+    name: 'Compliment Battle Arena',
+    description: 'Two players. Escalating compliments. First one to break character loses.',
+    tags: ['game', 'wholesome'],
     image: '/artifact-08.svg',
   },
   {
     id: '9',
-    name: 'Project Kickoff in a Box',
-    description: 'Spits out charters, timelines, and RACI matrices so you can pretend you planned.',
-    tags: ['generator', 'illusions'],
+    name: 'Life Narrator',
+    description: 'Describes your mundane activities like a nature documentary. "And here we see Josh, approaching the coffee machine..."',
+    tags: ['absurd', 'vibes'],
     image: '/artifact-09.svg',
   },
 ]
@@ -86,13 +86,13 @@ const timelineItems = [
     phase: 'Phase 1',
     weeks: 'Weeks 1–2',
     title: 'Get your tools, find your vibe',
-    description: 'Set up Claude Code and Cursor. Join a session or two. Start thinking about what annoys you enough to automate.',
+    description: 'Set up Claude Code and Cursor. Join a session or two. Start thinking about what would make you laugh, help your friends, or just be cool to exist.',
   },
   {
     phase: 'Phase 2',
     weeks: 'Weeks 3–8',
     title: 'Build weird stuff, share it',
-    description: 'Make things. Break things. Post your creations in the channel. Steal ideas from each other (encouraged).',
+    description: 'Make things. Break things. Post your creations in the channel. Steal ideas from each other (encouraged). Work stuff is fine but definitely not required.',
   },
   {
     phase: 'Phase 3',
@@ -104,36 +104,36 @@ const timelineItems = [
 
 const buildCategories = [
   {
-    title: 'Personal sidekicks',
-    description: 'Tools that do the boring stuff so you can do the interesting stuff.',
-    items: ['Meeting prep bots', 'Email drafters', 'Personal dashboards', 'Note organizers'],
+    title: 'Personal chaos agents',
+    description: 'Things that make your life weirder in a good way.',
+    items: ['Roast generators', 'Excuse machines', 'Hype bots', 'Decision avoiders'],
   },
   {
-    title: 'Creative contraptions',
-    description: 'Generators, converters, and things that make other things.',
-    items: ['Content generators', 'Format translators', 'Template factories', 'Style transformers'],
+    title: 'Creative toys',
+    description: 'Generators, remixers, and things that make other things.',
+    items: ['Art prompt mashers', 'Story starters', 'Music recommenders', 'Vibe curators'],
   },
   {
-    title: 'Team toys',
-    description: 'Artifacts meant to be shared, played with, and possibly abused.',
-    items: ['Icebreaker bots', 'Quiz generators', 'Feedback tools', 'Celebration machines'],
+    title: 'Friend group utilities',
+    description: 'Artifacts meant to be shared, played with, and used to settle debates.',
+    items: ['Group games', 'Who pays calculators', 'Movie pickers', 'Argument settlers'],
   },
   {
-    title: 'Gloriously useless utilities',
+    title: 'Gloriously useless delights',
     description: 'Stuff that probably shouldn\'t exist but absolutely should.',
-    items: ['Jargon translators', 'Decision randomizers', 'Procrastination timers', 'Compliment generators'],
+    items: ['Compliment battlers', 'Pet personality tests', 'Life narrators', 'Shower thought generators'],
   },
 ]
 
 const isItems = [
-  'A playground for building weird, useful, delightful things with AI',
-  'Permission to spend work hours making tools that make you smile',
+  'A playground for building weird, fun, delightful things with AI',
+  'Permission to make stuff that has no business case whatsoever',
   'A community of people who\'d rather build than talk about building',
 ]
 
 const isntItems = [
   'A certification with tests and boxes to check',
-  'About shipping production code or impressing stakeholders',
+  'About productivity, efficiency, or impressing anyone',
   'Only for "technical" people (whatever that means)',
 ]
 
@@ -189,7 +189,7 @@ export default function HomePage() {
               variants={variants}
             >
               Stop chatting with AI. Start building with it. Create interactive artifacts
-              that automate the annoying, amplify the creative, and make your coworkers ask
+              that entertain you, help your friends, or just make people ask
               "wait, how'd you make that?"
             </motion.p>
 
@@ -241,9 +241,9 @@ export default function HomePage() {
       <Section background="gradient">
         <div className="max-w-3xl mx-auto text-center">
           <SectionHeader
-            eyebrow="The problem"
-            title="AI chat is a trap."
-            description="Everyone's using AI to generate more content. More drafts. More docs. More stuff. But more stuff isn't the goal—better workflows are. The Rama is about building systems that actually save time, not just look busy."
+            eyebrow="The idea"
+            title="AI chat is just the beginning."
+            description="Everyone's using AI to generate text. Cool, but boring. The real fun starts when you build things—interactive, shareable, weird little creations that do something. The Rama is about making stuff that sparks joy, not stuff that impresses a VP."
             align="center"
           />
         </div>
@@ -314,7 +314,7 @@ export default function HomePage() {
         <SectionHeader
           eyebrow="What to build"
           title="Ideas to steal"
-          description="Your artifact should be interactive, shareable, and make at least one person go 'nice.'"
+          description="Build whatever you want. Seriously. If it makes you or someone else smile, you're doing it right."
         />
         <CardGrid columns={2}>
           {buildCategories.map((category) => (
@@ -335,9 +335,9 @@ export default function HomePage() {
         >
           <div className="card inline-block">
             <p className="text-dark-200">
-              The bar: <span className="text-accent-400">Would you actually use this?</span>
+              The bar: <span className="text-accent-400">Does this spark joy?</span>
             </p>
-            <p className="text-dark-500 text-sm mt-2">Not for customers. Not for execs. For you and your team.</p>
+            <p className="text-dark-500 text-sm mt-2">Not for customers. Not for execs. For you and your friends.</p>
           </div>
         </motion.div>
       </Section>

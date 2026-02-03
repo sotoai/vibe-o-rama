@@ -18,7 +18,7 @@ const prizeCategories = [
   { name: 'Glow-Up Award', emoji: '✨', description: 'V1 was rough. Final version? *chef\'s kiss*' },
   { name: 'Eye Candy', emoji: '🎨', description: 'So pretty you forgot to check if it actually works.' },
   { name: 'Best Sidekick', emoji: '🤖', description: 'The artifact that feels like it was made just for you.' },
-  { name: 'Time Machine', emoji: '⏱️', description: 'Saves you 10 minutes a day. That\'s 40 hours a year. You\'re welcome.' },
+  { name: 'Comfort Object', emoji: '🧸', description: 'You come back to it when you need a little boost. Digital emotional support.' },
   { name: 'Context King/Queen', emoji: '🧠', description: 'Connects dots you didn\'t know existed.' },
   { name: 'Best Remix', emoji: '🔄', description: 'Stole someone\'s idea and made it better. As intended.' },
   { name: 'First Timer', emoji: '🌱', description: 'Never built anything before. Now look at you.' },
@@ -51,8 +51,8 @@ export default function PrizesPage() {
               Prizes & Glory
             </motion.h1>
             <motion.p className="body-large" variants={variants}>
-              Awards for creativity, usefulness, and making people smile.
-              Technical complexity? Not on the rubric.
+              Awards for creativity, weirdness, and making people smile.
+              Technical complexity? Definitely not on the rubric.
             </motion.p>
           </motion.div>
         </div>
@@ -131,7 +131,7 @@ export default function PrizesPage() {
               {[
                 { label: 'Delight', desc: 'Does it spark joy or just exist?' },
                 { label: 'Usability', desc: 'Can someone figure it out without a tutorial?' },
-                { label: 'Clarity', desc: 'Does it solve one thing well or five things poorly?' },
+                { label: 'Focus', desc: 'Does it do one thing well or five things poorly?' },
                 { label: 'Shareability', desc: 'Would you post it in a channel unprompted?' },
               ].map((item) => (
                 <li key={item.label} className="flex items-start gap-4">
