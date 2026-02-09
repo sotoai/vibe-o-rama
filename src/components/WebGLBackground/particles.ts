@@ -19,13 +19,13 @@ export function createParticles(
   // Geometry — actual 3D cubes
   const geometry = new THREE.BoxGeometry(CUBE_SIZE, CUBE_SIZE, CUBE_SIZE);
 
-  // Material — dark purple with emissive glow
+  // Material — purple with emissive glow for visibility
   const material = new THREE.MeshStandardMaterial({
     color: COLORS.materialBase,
     emissive: COLORS.emissive,
-    emissiveIntensity: 0.15,
-    roughness: 0.4,
-    metalness: 0.6,
+    emissiveIntensity: 0.5,
+    roughness: 0.3,
+    metalness: 0.7,
   });
 
   // InstancedMesh — single draw call

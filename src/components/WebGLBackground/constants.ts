@@ -21,16 +21,16 @@ export const MOBILE_CONFIG: DeviceConfig = {
 
 export const MOBILE_BREAKPOINT = 768;
 
-export const CUBE_SIZE = 0.08;
-export const GRID_SPACING = 0.22;
+export const CUBE_SIZE = 0.12;
+export const GRID_SPACING = 0.25;
 
 // Colors matching the site's accent palette
 export const COLORS = {
   keyLight: 0xa855f7,    // purple
   fillLight: 0x06b6d4,   // cyan
   rimLight: 0xffffff,     // white
-  materialBase: 0x1a0a2e, // dark purple
-  emissive: 0x4c1d95,     // subtle purple glow
+  materialBase: 0x3b1a6e, // medium purple (brighter for visibility)
+  emissive: 0x7c3aed,     // vibrant purple glow
   gradientTop: 0xa855f7,  // purple (top of particles)
   gradientBottom: 0x06b6d4, // cyan (bottom of particles)
 };

@@ -8,7 +8,11 @@
       "Bash(npm install:*)",
       "Bash(npm run build:*)",
       "Bash(npx next build:*)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "Bash(npx next dev:*)",
+      "WebFetch(domain:localhost)",
+      "Bash(curl:*)",
+      "Bash(node:*)"
     ]
   }
 }

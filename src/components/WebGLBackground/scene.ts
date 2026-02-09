@@ -34,23 +34,26 @@ export function createScene(
   camera.position.set(0, 0, CAMERA_Z);
 
   // Lighting — 3-light cinematic rig
+  // Three.js r155+ uses physically correct lighting (candelas),
+  // so intensities need to be much higher than legacy values.
+
   // Key light: purple from upper-right
-  const keyLight = new THREE.PointLight(COLORS.keyLight, 2, 20);
+  const keyLight = new THREE.PointLight(COLORS.keyLight, 150, 30);
   keyLight.position.set(4, 4, 4);
   scene.add(keyLight);
 
   // Fill light: cyan from lower-left
-  const fillLight = new THREE.PointLight(COLORS.fillLight, 1.2, 20);
+  const fillLight = new THREE.PointLight(COLORS.fillLight, 100, 30);
   fillLight.position.set(-4, -3, 2);
   scene.add(fillLight);
 
   // Rim light: soft white from behind
-  const rimLight = new THREE.PointLight(COLORS.rimLight, 0.6, 20);
+  const rimLight = new THREE.PointLight(COLORS.rimLight, 50, 30);
   rimLight.position.set(0, 2, -5);
   scene.add(rimLight);
 
-  // Subtle ambient for minimum visibility
-  const ambient = new THREE.AmbientLight(0x1a0a2e, 0.3);
+  // Ambient for minimum visibility
+  const ambient = new THREE.AmbientLight(0x4c1d95, 2);
   scene.add(ambient);
 
   return { renderer, scene, camera };

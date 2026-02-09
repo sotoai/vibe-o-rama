@@ -50,7 +50,6 @@ export default function WebGLBackground() {
       function onVisibilityChange() {
         isVisible = !document.hidden;
         if (isVisible && !disposed) {
-          clock.start = performance.now() - (performance.now() - clock.start);
           animate();
         }
       }
@@ -88,6 +87,8 @@ export default function WebGLBackground() {
     let cleanup: (() => void) | undefined;
     init().then((fn) => {
       cleanup = fn;
+    }).catch((err) => {
+      console.warn('[WebGLBackground] Failed to initialize:', err);
     });
 
     return () => {
