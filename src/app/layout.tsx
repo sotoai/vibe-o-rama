@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { Nav, Footer } from '@/components'
+import { Nav, Footer, WebGLBackground } from '@/components'
 
 export const metadata: Metadata = {
   title: 'Vibe-O-Rama | SPRO',
@@ -15,8 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
+        <WebGLBackground />
         <Nav />
-        <main className="flex-1 pt-16">
+        <main className="flex-1 pt-16 relative z-10">
           {children}
         </main>
         <Footer />

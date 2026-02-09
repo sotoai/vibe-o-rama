@@ -3,7 +3,10 @@
     "allow": [
       "WebFetch(domain:dala.craftedbygc.com)",
       "WebSearch",
-      "WebFetch(domain:www.lapa.ninja)"
+      "WebFetch(domain:www.lapa.ninja)",
+      "WebFetch(domain:nfinitepaper.com)",
+      "Bash(npm install:*)",
+      "Bash(npm run build:*)"
     ]
   }
 }
