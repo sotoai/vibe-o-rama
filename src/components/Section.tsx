@@ -24,10 +24,10 @@ export default function Section({
   const prefersReducedMotion = useReducedMotion()
 
   const bgClass = {
-    default: 'bg-dark-950',
-    darker: 'bg-dark-900',
-    gradient: 'bg-gradient-to-b from-dark-900 to-dark-950',
-    glow: 'bg-dark-950 relative overflow-hidden',
+    default: 'bg-dark-950/80',
+    darker: 'bg-dark-900/80',
+    gradient: 'bg-gradient-to-b from-dark-900/80 to-dark-950/80',
+    glow: 'bg-dark-950/80 relative overflow-hidden',
   }[background]
 
   const paddingClass = {

@@ -147,7 +147,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         {/* Background effects */}
-        <div className="absolute inset-0 bg-dark-950" />
+        <div className="absolute inset-0 bg-dark-950/70" />
         <div className="absolute top-1/4 left-1/4 w-[800px] h-[800px] bg-accent-600/10 rounded-full blur-[150px] pointer-events-none" />
         <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-secondary-500/10 rounded-full blur-[120px] pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-dark-950" />
@@ -380,7 +380,7 @@ export default function HomePage() {
       {/* Final CTA */}
       <section className="relative overflow-hidden">
         {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-dark-900 to-dark-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-dark-900/80 to-dark-950/80" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-accent-600/10 rounded-full blur-[200px] pointer-events-none" />
 
         <div className="container-main section-padding relative z-10">

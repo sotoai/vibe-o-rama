@@ -9,7 +9,7 @@ export default function Footer() {
   const variants = prefersReducedMotion ? fadeVariantsReduced : fadeUpVariants
 
   return (
-    <footer className="relative border-t border-dark-800/50 bg-dark-950">
+    <footer className="relative border-t border-dark-800/50 bg-dark-950/80">
       {/* Glow effect */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-px bg-gradient-to-r from-transparent via-accent-500/50 to-transparent" />
 

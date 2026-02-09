@@ -6,7 +6,9 @@
       "WebFetch(domain:www.lapa.ninja)",
       "WebFetch(domain:nfinitepaper.com)",
       "Bash(npm install:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(npx next build:*)",
+      "Bash(wc:*)"
     ]
   }
 }
